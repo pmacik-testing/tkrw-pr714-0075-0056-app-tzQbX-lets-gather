@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vthp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0056-tenant/tkrw-pr714-0075-0056-app/devfile-sample-vthp@sha256:1463c1f4e3167f704dfe43e2c08c8fec92276220ad5d141e6f76221abb5ec9d2
+        name: my-nodejs
+        resources: {}
+status: {}
